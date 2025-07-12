@@ -17,3 +17,4 @@ vim.opt.clipboard = 'unnamedplus' -- Sync clipboard with system
 vim.opt.ignorecase = true         -- Case-insensitive searching
 vim.opt.smartcase = true          -- Case-sensitive if uppercase is used
 vim.opt.updatetime = 300          -- Faster completion (default is 4000ms)
+vim.opt.scrolloff = 8             -- Keep 8 lines above and below the cursor

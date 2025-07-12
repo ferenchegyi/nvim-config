@@ -18,3 +18,7 @@ map('n', '<Up>', '<Nop>')
 map('n', '<Down>', '<Nop>')
 map('n', '<Left>', '<Nop>')
 map('n', '<Right>', '<Nop>')
+
+-- NvimTree binds
+map('n', '<leader>n', ':NvimTreeFocus<CR>')
+map('n', '<leader>c', ':NvimTreeCollapse<CR>')
