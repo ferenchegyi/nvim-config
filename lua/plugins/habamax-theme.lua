@@ -1,1 +1,7 @@
-return { "ntk148v/habamax.nvim", dependencies={ "rktjmp/lush.nvim" } } 
+return { 
+  "ntk148v/habamax.nvim",
+  lazy = false,
+  dependencies = { 
+    "rktjmp/lush.nvim" 
+  } 
+} 
