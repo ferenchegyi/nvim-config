@@ -8,7 +8,3 @@ vim.cmd [[
   highlight NormalFloat  guibg=NONE ctermbg=NONE
   highlight SignColumn   guibg=NONE ctermbg=NONE
 ]]
-vim.cmd [[
-  highlight NormalFloat     guibg=NONE ctermbg=NONE
-  highlight SignColumn      guibg=NONE ctermbg=NONE
-]]
