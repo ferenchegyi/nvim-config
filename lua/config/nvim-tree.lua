@@ -2,9 +2,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- enable 24-bit color
-vim.opt.termguicolors = true
-
 -- setup
 require("nvim-tree").setup({
   update_focused_file = {

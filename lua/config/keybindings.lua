@@ -31,9 +31,31 @@ end
 map('n', '<leader>n', ':lua _G.toggle_nvim_tree_focus()<CR>') 
 map('n', '<leader>c', ':NvimTreeCollapse<CR>')
 
--- Nvim Telescope
+-- nvim telescope
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'telescope find files' })
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'telescope live grep' })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'telescope buffers' })
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'telescope help tags' })
+
+-- Remove buffer
+
+vim.keymap.set('n', '<S-d>', function()
+  local current_buf = vim.api.nvim_get_current_buf()
+  local buffers = vim.fn.getbufinfo({ buflisted = 1 })
+
+  -- Find next buffer to switch to
+  local target_buf = nil
+  for _, buf in ipairs(buffers) do
+    if buf.bufnr ~= current_buf then
+      target_buf = buf.bufnr
+      break
+    end
+  end
+
+  if target_buf then
+    vim.api.nvim_set_current_buf(target_buf)
+  end
+
+  vim.cmd('bd ' .. current_buf)
+end, { desc = 'Delete buffer and switch' })

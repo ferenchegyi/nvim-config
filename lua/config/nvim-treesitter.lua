@@ -7,6 +7,3 @@ require("nvim-treesitter").install({
   "css", "html", "scss", "json", "yaml", "toml",
   "sql", "markdown", "markdown_inline", "dockerfile", "bash", "vim"
 })
-
-require("nvim-treesitter.highlighter").attach()
-require("nvim-treesitter.indent").attach()
