@@ -5,3 +5,7 @@
 - nerdfonts
 - ripgrep
 - tree-sitter-cli (via npm) (npm install -g tree-sitter-cli)
+
+## To-do
+- lsp
+- prettier & eslint
