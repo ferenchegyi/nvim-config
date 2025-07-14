@@ -19,8 +19,16 @@ map('n', '<Down>', '<Nop>')
 map('n', '<Left>', '<Nop>')
 map('n', '<Right>', '<Nop>')
 
+_G.toggle_nvim_tree_focus = function()
+  local nvim_tree = require('nvim-tree.api')
+  if nvim_tree.tree.is_tree_buf() then
+    vim.cmd('wincmd p') -- Move to previous window
+  else
+    nvim_tree.tree.focus() -- Focus NvimTree
+  end
+end
 -- NvimTree binds
-map('n', '<leader>n', ':NvimTreeFocus<CR>')
+map('n', '<leader>n', ':lua _G.toggle_nvim_tree_focus()<CR>') 
 map('n', '<leader>c', ':NvimTreeCollapse<CR>')
 
 -- Nvim Telescope
