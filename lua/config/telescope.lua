@@ -12,6 +12,13 @@ require('telescope').setup({
       prompt_position = "top",
     },
 
+    file_ignore_patterns = {
+      "node_modules",
+      "%.git/",
+      "dist/",
+      "build/"
+    },
+
     -- Mappings inside Telescope
     mappings = {
       i = {                      -- Insert mode mappings
