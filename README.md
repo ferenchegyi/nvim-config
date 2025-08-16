@@ -9,6 +9,9 @@
 
 ## LSPs
 - [LuaLS](https://github.com/LuaLS/lua-language-server)
+- TS: npm i -g typescript typescript-language-server
+- HTML: npm i -g vscode-html-language-server
+- CSS: npm i -g vscode-css-language-server
 
 ## To-do
 - lsp

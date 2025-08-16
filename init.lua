@@ -11,3 +11,6 @@ require("config.telescope")
 
 -- LSPs
 vim.lsp.enable("luals")
+vim.lsp.enable("typescriptls")
+vim.lsp.enable("htmlls")
+vim.lsp.enable("cssls")
