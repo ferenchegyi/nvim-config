@@ -5,6 +5,7 @@
 - nerdfonts
 - ripgrep
 - tree-sitter-cli (via npm) (npm install -g tree-sitter-cli)
+- wl-clipboard (if you are on wayland)
 
 ## To-do
 - lsp
