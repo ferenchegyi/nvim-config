@@ -8,7 +8,7 @@
 - wl-clipboard (if you are on wayland)
 
 ## LSPs
-- [LuaLS](https://github.com/LuaLS/lua-language-server)
+- [LuaLS](https://github.com/LuaLS/lua-language-server): Also add it to the PATH to be executable
 - TS: npm i -g typescript typescript-language-server
 - HTML: npm i -g vscode-html-language-server
 - CSS: npm i -g vscode-css-language-server
