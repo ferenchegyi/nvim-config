@@ -8,6 +8,7 @@ require("config.nvim-treesitter")
 require("config.bufferline")
 require("config.nvim-tree")
 require("config.telescope")
+require("config.diagnostic")
 
 -- LSPs
 vim.lsp.enable("luals")
