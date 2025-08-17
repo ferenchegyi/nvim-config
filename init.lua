@@ -11,7 +11,7 @@ require("config.telescope")
 require("config.diagnostic")
 
 -- LSPs
-vim.lsp.enable("luals")
 vim.lsp.enable("typescriptls")
 vim.lsp.enable("htmlls")
 vim.lsp.enable("cssls")
+vim.lsp.enable("bashls")
