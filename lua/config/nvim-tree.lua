@@ -4,6 +4,10 @@ vim.g.loaded_netrwPlugin = 1
 
 -- setup
 require("nvim-tree").setup({
+  git = {
+    enable = true,
+    ignore = false,
+  },
   update_focused_file = {
     enable = true,
     update_cwd = true,
@@ -11,11 +15,11 @@ require("nvim-tree").setup({
   sort = {
     sorter = "case_sensitive",
   },
+  filters = {
+    dotfiles = false,
+  },
   view = {
     width = 40,
-  },
-  filters = {
-    dotfiles = true,
   },
   renderer = {
     root_folder_modifier = ":t",

@@ -1,0 +1,15 @@
+{
+  "name": "nvim-lsp-servers",
+  "version": "0.1.0",
+  "description": "My LSP servers from npm",
+  "author": "Ferenc Hegyi",
+  "license": "ISC",
+  "dependencies": {
+    "bash-language-server": "^5.6.0",
+    "tree-sitter-cli": "^0.25.8",
+    "typescript": "^5.9.2",
+    "typescript-language-server": "^4.4.0",
+    "vscode-css-languageserver-bin": "^1.4.0",
+    "vscode-html-languageserver-bin": "^1.4.0"
+  }
+}
