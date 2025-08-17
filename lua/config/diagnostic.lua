@@ -28,6 +28,10 @@ vim.diagnostic.config({
   update_in_insert = false,
 })
 
+-- Add space for the status symbol next to the line
+-- so for example the Error symbol won't make the screen jump
+vim.wo.signcolumn = 'yes'
+
 -- Optionally, set highlight groups for the signs
 vim.cmd [[
   highlight DiagnosticSignError guifg=#ff0000
